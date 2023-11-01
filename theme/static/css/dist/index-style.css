@@ -1,0 +1,26 @@
+.icn{
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    display: block;
+    background-size: cover;
+}
+.i-facebook{
+    background-image: url("../../assets/facebook.svg");
+}
+.i-github{
+    background-image: url("../../assets/github.svg");
+}
+.i-instagram{
+    background-image: url("../../assets/instagram.svg");
+}
+.i-linkedin{
+    background-image: url("../../assets/linkedin.svg");
+}
+.bg-primary{
+    background-color: blueviolet;
+}
+.hover\:bg-primary:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(85 64 175/var(--tw-bg-opacity));
+}
