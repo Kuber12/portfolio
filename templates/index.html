@@ -34,7 +34,7 @@
               </div>
             <div class="mt-5 flex items-center justify-center gap-x-6">
             <a href="#" onclick="window.location.href = '{% url 'download_pdf' %}'" class="rounded-md bg-quaternary px-4 py-3 text-md font-semibold text-primary shadow-sm hover:grow-1 hover:animate-pulse focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Download CV</a>
-            <a href="/about" class="text-md font-semibold leading-6 text-gray-900">Hire Me <span aria-hidden="true">→</span></a>
+            <a href="/contact" class="text-md font-semibold leading-6 text-gray-900">Hire Me <span aria-hidden="true">→</span></a>
             </div>
         </div>
         </div>
@@ -57,7 +57,7 @@
         <div class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
           <div class="flex items-center justify-center sm:justify-start">
             <p class="font-body text-lg font-semibold uppercase text-grey-20">
-              Connect with me
+              <a href="/contact">Connect with me</a>
             </p>
             <div class="hidden sm:block">
               <i class="bx bx-chevron-right text-2xl text-primary"></i>
@@ -129,8 +129,28 @@
   <div class="bg-primary py-12">
     <div class="text-center w-10/12 m-auto">
         <h1 class="font-header text-4xl font-semibold lg:text-5xl text-gray-900">My Projects</h1>
-        <div class="flex">
-          <div class="w-1/3 h-auto py-4 ">
+        <div class="grid grid-flow-col grid-cols-3">
+          <div class=" h-auto py-4 ">
+            <h3 class="lg:text-3xl font-medium">Hamro Canteen</h3>
+            <h4 class="lg:text-1xl font-medium pb-2 text-gray-900">HTML, CSS, JS, PHP</h4>
+            <img class="h-48 w-72 pb-4 m-auto">
+            <p class="pb-3 text-gray-900">
+              A canteen billing soultion
+            </p>
+            <button class="rounded-md bg-quaternary px-4 py-2 text-md font-semibold text-primary shadow-sm hover:grow-1 hover:animate-pulse focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mr-4">Live Demo</button>
+            <button class="rounded-md bg-tertiary px-4 py-2 text-md font-semibold text-quaternary shadow-sm hover:grow-1 hover:animate-pulse focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Documentation</button>
+          </div>
+          <div class=" h-auto py-4 ">
+            <h3 class="lg:text-3xl font-medium">Video Poker</h3>
+            <h4 class="lg:text-1xl font-medium pb-2 text-gray-900">C</h4>
+            <img class="h-48 w-72 pb-4 m-auto">
+            <p class="pb-3 text-gray-900">
+              A video poker game.
+            </p>
+            <button class="rounded-md bg-quaternary px-4 py-2 text-md font-semibold text-primary shadow-sm hover:grow-1 hover:animate-pulse focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mr-4">Live Demo</button>
+            <button class="rounded-md bg-tertiary px-4 py-2 text-md font-semibold text-quaternary shadow-sm hover:grow-1 hover:animate-pulse focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Documentation</button>
+          </div>
+          <div class=" h-auto py-4 ">
             <h3 class="lg:text-3xl font-medium">Hamro Canteen</h3>
             <h4 class="lg:text-1xl font-medium pb-2 text-gray-900">HTML, CSS, JS, PHP</h4>
             <img class="h-48 w-72 pb-4 m-auto">
@@ -180,7 +200,7 @@
             WEB DEVELOPMENT
           </h3>
           <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            I make simple, beautiful and easy to navigate UI.
           </p>
         </div>
       </div>
@@ -188,10 +208,10 @@
         <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
           <div class="hidden group-hover:block">
             {% load static %}
-            <img src="{% static '/assets/icon-content-white.svg' %}" alt="Web Development">
-          </div>
-          <div class="block group-hover:hidden">
-            {% load static %}
+              <img src="{% static '/assets/icon-content-white.svg' %}" alt="Web Development">
+            </div>
+            <div class="block group-hover:hidden">
+              {% load static %}
             <img src="{% static '/assets/icon-content-black.svg' %}" alt="Web Development">
           </div>
         </div>
@@ -200,7 +220,7 @@
             CONTENT WRITING
           </h3>
           <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            I can write contents.
           </p>
         </div>
       </div>
@@ -245,8 +265,44 @@
           <img class="w-14 h-14"src={% static '/assets/leo.png' %} alt="cisco">
           <span class="pl-3 font-bold text-lg">Member at Leo club of Kathmandu Agrani</span>
         </div>
-        
+        <div class="h-auto px-6 py-3 m-2 bg-secondary flex items-center">
+          <img class="w-14 h-14"src={% static '/assets/leo.png' %} alt="cisco">
+          <span class="pl-3 font-bold text-lg">FIDE rated chess player</span>
+        </div>
       </div>
+  </div>
+</div>
+<div class="bg-secondary py-12">
+  <div class="text-center w-10/12 m-auto">
+      <h1 class="font-header text-4xl font-semibold lg:text-5xl text-gray-900">Other Skills</h1>
+      <div class="flex items-center justify-center my-3">
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> Tailwind </h4>
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> Bootstrap </h4>
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> CSS </h4>
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> Vanilla JS </h4>
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> JQuery </h4>
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> Canva </h4>
+      </div>
+      <div class="flex items-center justify-center my-3">
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> C </h4>
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> PHP </h4>
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> React </h4>
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> Python </h4>
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> Django </h4>
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> MS Office </h4>
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> JAVA </h4>
+      </div>
+      <div class="flex items-center justify-center my-3">
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> Team Player </h4>
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> Decision Making </h4>
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> Fast Learner </h4>
+        <h4 class="bg-primary px-3 py-2 font-bold text-2xl mx-2 rounded-lg"> Good Listener </h4>
+      </div>
+  </div>
+</div>
+<div class="bg-tertiary py-12">
+  <div class="text-center w-10/12 m-auto">
+      <h1 class="font-header text-4xl font-semibold lg:text-5xl text-gray-900">About Me</h1>
   </div>
 </div>
 {% endblock body %}

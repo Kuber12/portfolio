@@ -1,3 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
+#id{
+    scroll-behavior: smooth;
+}
 .icn{
     width: 25px;
     height: 25px;

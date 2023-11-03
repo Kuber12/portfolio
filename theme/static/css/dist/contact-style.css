@@ -1,4 +1,3 @@
-.tooltip-div:hover > div{
-    
+.tooltip-div:hover > div{   
     visibility: visible !important;
 }
